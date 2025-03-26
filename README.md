@@ -29,7 +29,7 @@ Une application mobile de clicker développée avec Expo et React Native, avec f
 1. Clonez le dépôt :
 
    ```bash
-   git clone <URL_DU_REPO>
+   git clone https://github.com/l0l0o/clickerVersus
    cd clickerVersus
    ```
 
