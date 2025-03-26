@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+# ClickerVersus - Application Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Une application mobile de clicker développée avec Expo et React Native, avec fonctionnalités de sauvegarde Firebase.
 
-## Get started
+## 📋 Prérequis
 
-1. Install dependencies
+- [Node.js](https://nodejs.org/) (version recommandée : 16.x ou supérieure)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
 
+## 🛠️ Technologies utilisées
+
+- [Expo](https://expo.dev/) - Framework pour applications React Native
+- [React Native](https://reactnative.dev/) - Framework mobile
+- [Firebase](https://firebase.google.com/) - Base de données et stockage cloud
+- [TypeScript](https://www.typescriptlang.org/) - Typage statique pour JavaScript
+
+## 📦 Dépendances principales
+
+- `expo` - Framework principal
+- `expo-router` - Routage de l'application
+- `firebase` - Intégration Firebase pour la persistance des données
+- `react-native-reanimated` - Animations avancées
+- `@react-native-async-storage/async-storage` - Stockage local
+- `expo-haptics` - Retours haptiques
+
+## 🚀 Installation
+
+1. Clonez le dépôt :
+
+   ```bash
+   git clone <URL_DU_REPO>
+   cd clickerVersus
+   ```
+
+2. Installez les dépendances :
    ```bash
    npm install
    ```
 
-2. Start the app
+## 🎮 Démarrer l'application
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Pour lancer l'application en mode développement :
 
 ```bash
-npm run reset-project
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Cela ouvrira une interface dans votre navigateur avec plusieurs options pour exécuter l'application :
 
-## Learn more
+- Appuyez sur `a` pour ouvrir sur un émulateur Android
+- Appuyez sur `i` pour ouvrir sur un simulateur iOS
+- Scannez le QR code avec l'application Expo Go sur votre appareil mobile
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📱 Fonctionnalités
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Jeu de clicker avec accumulation de ressources
+- Sauvegarde des données sur Firebase
+- Interface utilisateur réactive et animations
+- Système de progression et d'améliorations
 
-## Join the community
+## 🏗️ Structure du projet
 
-Join our community of developers creating universal apps.
+- `/app` - Composants principaux et logique de l'application
+- `/app/clicker` - Fonctionnalité principale du jeu
+- `/connection` - Configuration Firebase
+- `/constants` - Constants et configurations
+- `/hooks` - Custom React hooks
+- `/assets` - Images et ressources
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🔧 Configuration de Firebase
+
+L'application utilise Firebase pour le stockage des données. La configuration est présente dans le fichier `connection/database.ts`.
+
+## 📝 Scripts npm disponibles
+
+- `npm start` - Démarrer l'application
+- `npm run android` - Démarrer sur émulateur Android
+- `npm run ios` - Démarrer sur simulateur iOS
+- `npm run web` - Démarrer en version web
+- `npm test` - Exécuter les tests
+- `npm run lint` - Exécuter le linter
